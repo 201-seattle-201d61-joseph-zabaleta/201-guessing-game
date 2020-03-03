@@ -1,0 +1,20 @@
+div {
+  text-indent: 50px;
+  width: 400px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+h1 {
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  width: 400px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
