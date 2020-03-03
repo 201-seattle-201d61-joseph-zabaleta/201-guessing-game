@@ -12,8 +12,8 @@ if (visited == 'yes') {
 } else {
   alert('Please provide a yes or no answer.')
 }
+// console.log(visited);
 
-console.log(visited);
 
 // Switch version I tried to see the difference.
 
@@ -38,8 +38,7 @@ if (washington == 'yes') {
 } else {
   alert('Please provide a yes or no answer.')
 }
-
-console.log(washington.toLowerCase());
+// console.log(washington.toLowerCase());
 
 var balloon = prompt('Have you traveled by hot air balloon before?');
 
@@ -50,8 +49,7 @@ if (balloon == 'yes') {
 } else {
   alert('Please provide a yes or no answer.')
 }
-
-console.log(balloon.toLowerCase());
+// console.log(balloon.toLowerCase());
 
 var aliens = prompt('Do you believe in extraterrestrial life?');
 
@@ -62,8 +60,7 @@ if (aliens == 'yes') {
 } else {
   alert('Please provide a yes or no answer.')
 }
-
-console.log(aliens.toLowerCase());
+// console.log(aliens.toLowerCase());
 
 var pets = prompt('Are dogs better than cats?');
 
@@ -74,5 +71,6 @@ if (pets == 'yes') {
 } else {
   alert('Please provide a yes or no answer.')
 }
+// console.log(pets.toLowerCase());
 
-console.log(pets.toLowerCase());
+alert('Thank you '+ newUser + ' for answering all the questions');
