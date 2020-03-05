@@ -6,9 +6,10 @@ var newUser = prompt('Hello new user, What is your name?');
 //Welcome user
 alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.')
 
+//Score counter variable
 var countCorrect = 0
 
-//Question 1
+//Question 1 
 var age = prompt('Is the Author older than 30 years of age?').toLowerCase();
 
 if (age == 'no') {
@@ -124,23 +125,31 @@ if (i === 1) {
 }
 
 
-// Question 7 REDO
+// Question 7 FIX Issue
 
 // var colors = ['red', 'yellow', 'blue']
-// var answer;
+// var attempts= 6;
 
-// for (var i = 0; i < 6; i++) {
-    
-//     if (i == 0) {
-//       answer = prompt('What is a primary color?').toLowerCase();
+// loop1: for (attempts = 0; attempts <= 5; attempts++) {
+ 
+//            var primary = prompt('What is a primary color?');
+ 
+//  loop2: for (var i = 0; i < colors.length; i++) {
+//           primary = primary.toLowerCase();
+//           if ( primary === colors[i]) {
+//             alert('Correct!');
+//             break loop1;
+//           }
+//   }  
+  
+//   if (attempts < 6) {
+//     alert('Wrong!');
 //   }
-
 // }
 
-
-
+//Final score alert
 alert('Your final score '+ countCorrect + ' out of 7 questions.');
+  console.log(countCorrect);
 
-console.log(countCorrect);
-
+//Thank you alert
 alert('Thank you '+ newUser + ' for answering all the questions');

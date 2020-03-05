@@ -11,3 +11,10 @@ New features added 20200304
   First time using for loop
 -Added question 7
   attempting to use for loop and looping through an array
+
+Date 20200305
+-Added background image
+-Changed DIV backgrounds
+-Centered content
+-Tried a lot of new things
+-Extracted material that needs review.

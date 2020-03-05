@@ -1,21 +1,67 @@
+html {
+  /* extracted from https://css-tricks.com/perfect-full-page-background-image/ In order to achieve full screen background img, I will need to
+  look up each rule within this to better understand  */
+  background: url('nature.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  /* background-image: url('nature.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%, 100%; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  text-align: center;
+  background: rgba(37, 37, 37, 0.75);
+  border-radius: 25px;
+  padding: 2px;
+  margin: 15px;
+  border: solid black 1px;
+}
+
 div {
-  text-indent: 50px;
-  width: 400px;
+  margin: auto;
+  color: white;
+  background: rgba(37, 37, 37, 0.75);
+  width: 600px;
   border: 2px solid black;
   padding: 10px;
 }
 
 h1 {
-  width: auto;
+  color: white;
+  /* background: rgba(37, 37, 37, 0.75); */
+  display: inline-block;
   text-align: center;
-  background-color: gray;
+  width: 350px;
+  /* border: solid black 1px; */
+  margin: 1px;
+/*   
+  width: auto;
+  text-align: center; */
+  
 }
 
 h2 {
+  margin: auto;
+  color: white;
+  /* background: rgba(37, 37, 37, 0.75); */
   width: 400px;
+  /* background-color: chartreuse; */
   text-align: center;
 }
 
 h3 {
   text-align: center;
+  position: relative;
+}
+
+p {
+  text-indent: 50px;
+
 }
