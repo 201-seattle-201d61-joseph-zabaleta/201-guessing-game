@@ -18,3 +18,7 @@ Date 20200305
 -Centered content
 -Tried a lot of new things
 -Extracted material that needs review.
+
+# Contributors
+  - Joseph Zabaleta
+  - Peng Chen for paired programing. worked on question 1 button and linked to a function.

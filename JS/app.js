@@ -1,32 +1,34 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
 //Ask user name
 var newUser = prompt('Hello new user, What is your name?');
 
 //Welcome user
-alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.')
+alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.');
 
 //Score counter variable
-var countCorrect = 0
+var countCorrect = 0;
 
-//Question 1 
-var age = prompt('Is the Author older than 30 years of age?').toLowerCase();
-
-if (age == 'no') {
-  alert("Question 1: Correct!");
-  countCorrect++;
-} else if (age == 'yes') {
-  alert('Question 1: Wrong!')
-} else {
-  alert('Please provide a yes or no answer.')
+//Question 1
+function question1(){
+  var age = prompt('Is the Author older than 30 years of age?').toLowerCase();
+  if (age === 'no') {
+    alert('Question 1: Correct!');
+    countCorrect++;
+  } else if (age === 'yes') {
+    alert('Question 1: Wrong!');
+  } else {
+    alert('Please provide a yes or no answer.');
+  }
+  console.log(age.toLowerCase());
 }
-console.log(age.toLowerCase());
 
 //Question 2
 var name = prompt('Is the Authors name Joseph?').toLowerCase();
 
 if (name == 'yes') {
-  alert("Question 2: Correct!");
+  alert('Question 2: Correct!');
   countCorrect++;
 } else if (name == 'no') {
   alert('Question 2: Wrong!')
@@ -39,7 +41,7 @@ console.log(name.toLowerCase());
 var origin = prompt('Is the author from Seattle?').toLowerCase();
 
 if (origin == 'no') {
-  alert("Question 3: Correct!");
+  alert('Question 3: Correct!');
   countCorrect++;
 } else if (origin == 'yes') {
   alert('Question 3: Wrong!')
@@ -52,7 +54,7 @@ console.log(origin.toLowerCase());
 var work = prompt('Has Joseph worked at Home Depot?').toLowerCase();
 
 if (work == 'yes') {
-  alert("Question 4: Correct!");
+  alert('Question 4: Correct!');
   countCorrect++;
 } else if (work == 'no') {
   alert('Question 4: Wrong!')
@@ -65,7 +67,7 @@ console.log(work.toLowerCase());
 var kite = prompt('Does Joseph want to learn to fly a kite?').toLowerCase();
 
 if (kite == 'yes') {
-  alert("Question 5: Correct!");
+  alert('Question 5: Correct!');
   countCorrect++;
 } else if (kite == 'no') {
   alert('Question 5: Wrong!')

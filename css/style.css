@@ -1,7 +1,7 @@
 html {
   /* extracted from https://css-tricks.com/perfect-full-page-background-image/ In order to achieve full screen background img, I will need to
   look up each rule within this to better understand  */
-  background: url('nature.jpg') no-repeat center center fixed; 
+  background: url("nature.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,6 +13,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100%, 100%; */
   font-family: Georgia, 'Times New Roman', Times, serif;
+  /* background-image: url(img/nature.jpg);
+  background:  no-repeat center center fixed;  */
+
 }
 
 header {
