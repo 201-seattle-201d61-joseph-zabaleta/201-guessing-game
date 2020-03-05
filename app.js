@@ -1,76 +1,146 @@
 'use strict';
 
+//Ask user name
 var newUser = prompt('Hello new user, What is your name?');
-  alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.')
 
-var visited = prompt('Have you been to Code Fellows?').toLowerCase();
+//Welcome user
+alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.')
 
-if (visited == 'yes') {
-  alert("That's amazing! It is has one of the best learning enviroments in the city");
-} else if (visited == 'no') {
-  alert('No? You definitely have to check them out schedule a tour at Codefellows.org today!')
+var countCorrect = 0
+
+//Question 1
+var age = prompt('Is the Author older than 30 years of age?').toLowerCase();
+
+if (age == 'no') {
+  alert("Question 1: Correct!");
+  countCorrect++;
+} else if (age == 'yes') {
+  alert('Question 1: Wrong!')
 } else {
   alert('Please provide a yes or no answer.')
 }
-// console.log(visited);
+console.log(age.toLowerCase());
+
+//Question 2
+var name = prompt('Is the Authors name Joseph?').toLowerCase();
+
+if (name == 'yes') {
+  alert("Question 2: Correct!");
+  countCorrect++;
+} else if (name == 'no') {
+  alert('Question 2: Wrong!')
+} else {
+  alert('Please provide a yes or no answer.')
+}
+console.log(name.toLowerCase());
+
+//Question 3
+var origin = prompt('Is the author from Seattle?').toLowerCase();
+
+if (origin == 'no') {
+  alert("Question 3: Correct!");
+  countCorrect++;
+} else if (origin == 'yes') {
+  alert('Question 3: Wrong!')
+} else {
+  alert('Please provide a yes or no answer.')
+}
+console.log(origin.toLowerCase());
+
+//Question 4
+var work = prompt('Has Joseph worked at Home Depot?').toLowerCase();
+
+if (work == 'yes') {
+  alert("Question 4: Correct!");
+  countCorrect++;
+} else if (work == 'no') {
+  alert('Question 4: Wrong!')
+} else {
+  alert('Please provide a yes or no answer.')
+}
+console.log(work.toLowerCase());
+
+//Question 5
+var kite = prompt('Does Joseph want to learn to fly a kite?').toLowerCase();
+
+if (kite == 'yes') {
+  alert("Question 5: Correct!");
+  countCorrect++;
+} else if (kite == 'no') {
+  alert('Question 5: Wrong!')
+} else {
+  alert('Please provide a yes or no answer.')
+}
+console.log(kite.toLowerCase());
+
+//
+//Question 6 - Guessing game
+//
+
+var guess = prompt('Guess a number between 1 and 5');
+var correct = '4';
+
+for (var i = 1; i < 4; i++) {
+  if (guess > correct) {
+    var guess = prompt('Your number is too high');
+  } else if (guess < correct) {
+    var guess = prompt('You number is too low');
+  } else if (guess === correct) {
+    var guess = prompt('You are correct!');
+    countCorrect++;
+    break;
+  } else {
+    var guess = prompt('Invalid Input Try Again');
+  }
+}
+alert('The correct answer was 4.');
+
+//Question 7 - multiple answer
+var colors = ['red', 'yellow', 'blue']
+var answer = prompt('What is a primary color?').toLowerCase();
+  console.log(answer);
+
+for (var i = 1; i < 6; i++) {
+  if (answer == colors[0]) {
+    console.log('Correct!')
+    break;
+  } else if (answer == colors[1]) {
+    console.log('Correct!')
+    break;
+  } else if (answer == colors[2]) {
+    console.log('Correct!')
+    break;
+  } else {
+    var answer = prompt('Sorry try again. What is a primary color?')
+    console.log('Incorrect!')
+  }
+}
+
+if (i === 1) {
+  alert('You are correct! The correct answers were: red, yellow, blue');
+  countCorrect++;
+} else if (i === 6) {
+  alert('Sorry you guessed six times. The correct answers would have been: red, yellow, blue');
+}
 
 
-// Switch version I tried to see the difference.
+// Question 7 REDO
 
-// switch (visited) {
-//   case 'yes':
-//     alert("That's amazing! It is has one of the best learning enviroments in the city");
-//     break;
-//   case 'no':
-//     alert('No? You definitely have to check them out schedule a tour at Codefellows.org today!');
-//     break;
-//   default:
-//     alert('Please provide a yes or no answer.');
-//     break;
+// var colors = ['red', 'yellow', 'blue']
+// var answer;
+
+// for (var i = 0; i < 6; i++) {
+    
+//     if (i == 0) {
+//       answer = prompt('What is a primary color?').toLowerCase();
+//   }
+
 // }
 
-var washington = prompt('Do you live in Washington?').toLowerCase();
 
-if (washington == 'yes') {
-  alert('It truly is great to live in the Evergreen State.');
-} else if (washington == 'no') {
-  alert('Well, the evergreen state is not for everyone.')
-} else {
-  alert('Please provide a yes or no answer.')
-}
-// console.log(washington.toLowerCase());
 
-var balloon = prompt('Have you traveled by hot air balloon before?');
+alert('Your final score '+ countCorrect + ' out of 7 questions.');
 
-if (balloon == 'yes') {
-  alert('Really? I have never met anyone who has rode one before.');
-} else if (balloon == 'no') {
-  alert('I have only ever seen the baloons from a far but one day maybe we will get a chance to ride them.')
-} else {
-  alert('Please provide a yes or no answer.')
-}
-// console.log(balloon.toLowerCase());
-
-var aliens = prompt('Do you believe in extraterrestrial life?');
-
-if (aliens == 'yes') {
-  alert('Yes! Exactly what I thought Elon Musk is not from planet Earth!');
-} else if (aliens == 'no') {
-  alert('Then why do we have a rover on mars.....')
-} else {
-  alert('Please provide a yes or no answer.')
-}
-// console.log(aliens.toLowerCase());
-
-var pets = prompt('Are dogs better than cats?');
-
-if (pets == 'yes') {
-  alert('Dogs are everyones best friend!');
-} else if (pets == 'no') {
-  alert('Oh you are a cat person, that explains a lot.')
-} else {
-  alert('Please provide a yes or no answer.')
-}
-// console.log(pets.toLowerCase());
+console.log(countCorrect);
 
 alert('Thank you '+ newUser + ' for answering all the questions');
