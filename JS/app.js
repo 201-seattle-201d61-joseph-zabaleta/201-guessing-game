@@ -207,7 +207,6 @@ function questionM(problemM) {
 /** ******************************************************************************************************************************************* */
 //Final score alert
 alert('Your final score '+ countCorrect + ' out of 7 questions.');
-console.log(countCorrect);
 
 //Thank you alert
 alert('Thank you '+ newUser + ' for answering all the questions');
