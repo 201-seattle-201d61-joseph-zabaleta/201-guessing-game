@@ -1,21 +1,20 @@
 'use strict';
 
+//Greeting upon visiting the webpage. This function is not called here in js file but on the html page in order to have the page load before being prompted
 // eslint-disable-next-line no-unused-vars
 function welcome() {
-//Ask user name
   var newUser = prompt('Hello new user, What is your name?');
-
-  //Welcome user
   alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.');
 }
 
+//All questions combined into a single function invoked through a button in html
 // eslint-disable-next-line no-unused-vars
 function quiz() {
-
   var countCorrect = 0;
   var y = 'Correct!';
   var n = 'Wrong!';
 
+  //Questions 1-5 yes or no answer function
   function question(problem, answer) {
     var q = prompt(problem).toLowerCase();
     if (q === 'yes' || q === 'no') {
@@ -29,7 +28,7 @@ function quiz() {
       prompt('Please enter a yes or no.');
     }
   }
-
+  //Question 6 Number guess function
   function questionGuess (problemG, correctNumber) {
     var guess = prompt(problemG);
     for (var counter1 = 0; counter1 < 4; counter1++) {
@@ -53,6 +52,7 @@ function quiz() {
     }
   }
 
+  //Question 7 Multiple Anwswer function
   function questionM(problemM, attempts) {
     var colorAnswers = ['red', 'yellow', 'blue'];
     // var attempts= 6;
@@ -71,6 +71,7 @@ function quiz() {
     }
   }
 
+  //Invokation of all seven questions with parameters set
   question('Is the Author older than 30 years of age', 'no'); // QUESTION 1
   question('Is the Authors name Joseph?', 'yes'); // QUESTION 2
   question('Is the author from Seattle?', 'no'); // QUESTION 3
