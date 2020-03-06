@@ -1,5 +1,6 @@
 'use strict';
 
+// eslint-disable-next-line no-unused-vars
 function welcome() {
 //Ask user name
   var newUser = prompt('Hello new user, What is your name?');
@@ -52,10 +53,10 @@ function quiz() {
     }
   }
 
-  function questionM(problemM) {
+  function questionM(problemM, attempts) {
     var colorAnswers = ['red', 'yellow', 'blue'];
-    var attempts= 6;
-    loop1: for (attempts = 0; attempts <= 5; attempts++) {
+    // var attempts= 6;
+    loop1: for (attempts; attempts > 0; attempts--) {
       var primary = prompt(problemM);
 
       for (var i = 0; i < colorAnswers.length; i++) {
@@ -66,9 +67,7 @@ function quiz() {
           break loop1;
         }
       }
-      if (attempts < 6) {
-        alert(n);
-      }
+      alert(n);
     }
   }
 
@@ -78,7 +77,7 @@ function quiz() {
   question('Has Joseph worked at Home Depot?', 'yes'); // QUESTION 4
   question('Does Joseph want to learn to fly a kite?', 'yes'); // QUESTION 5
   questionGuess('Guess a number between 1 and 5', 4); // QUESTION 6
-  questionM('What is a primary color?'); //QUESTION 7
+  questionM('What is a primary color?', 3); //QUESTION 7
 
   //Final score alert
   alert('Your final score '+ countCorrect + ' out of 7 questions.');
