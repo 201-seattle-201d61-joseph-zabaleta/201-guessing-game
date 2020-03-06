@@ -31,6 +31,7 @@ function question(problem, answer) {
 /** ************************************************************************************************************************ */
 // QUESTIONS TO ASK
 
+
 question('Is the Author older than 30 years of age', 'no'); // QUESTION 1
 question('Is the Authors name Joseph?', 'yes'); // QUESTION 2
 question('Is the author from Seattle?', 'no'); // QUESTION 3
@@ -38,6 +39,7 @@ question('Has Joseph worked at Home Depot?', 'yes'); // QUESTION 4
 question('Does Joseph want to learn to fly a kite?', 'yes'); // QUESTION 5
 questionGuess('Guess a number between 1 and 5', 4); // QUESTION 6
 questionM('What is a primary color?'); //QUESTION 7
+
 
 // console.log(countCorrect);
 /** *************************************************************************************************************************** */
