@@ -6,6 +6,7 @@ var newUser = prompt('Hello new user, What is your name?');
 //Welcome user
 alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.');
 
+// eslint-disable-next-line no-unused-vars
 function quiz() {
 
   var countCorrect = 0;
@@ -32,14 +33,18 @@ function quiz() {
       guess = Number(guess);
       var correct = correctNumber;
       if (isNaN(guess)) {
+        // eslint-disable-next-line no-redeclare
         var guess = prompt('Invalid input please enter a valid between 1 and 5.');
       } else if (guess === correct){
+        // eslint-disable-next-line no-redeclare
         var guess = prompt('You are correct!');
         countCorrect++;
         break;
       } else if (guess > 4) {
+        // eslint-disable-next-line no-redeclare
         var guess = prompt('Your number is too high. Please try again.');
       } else if (guess < 4) {
+        // eslint-disable-next-line no-redeclare
         var guess = prompt('Your number is too low. Please try again.');
       }
     }
