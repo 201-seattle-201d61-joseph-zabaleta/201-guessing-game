@@ -1,10 +1,12 @@
 'use strict';
 
+function welcome() {
 //Ask user name
-var newUser = prompt('Hello new user, What is your name?');
+  var newUser = prompt('Hello new user, What is your name?');
 
-//Welcome user
-alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.');
+  //Welcome user
+  alert('Welcome '+ newUser + ' to the About Me page of Joseph Zabaleta.');
+}
 
 // eslint-disable-next-line no-unused-vars
 function quiz() {
