@@ -19,17 +19,20 @@ body {
 }
 
 header {
+
   text-align: center;
   background: rgba(37, 37, 37, 0.75);
   border-radius: 25px;
   padding: 2px;
-  margin: 15px;
+  margin: auto;
+  width: 900px;
   border: solid black 1px;
 }
 
 div {
   margin: auto;
   color: white;
+  border-radius: 25px;
   background: rgba(37, 37, 37, 0.75);
   width: 600px;
   border: 2px solid black;
