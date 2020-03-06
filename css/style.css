@@ -40,6 +40,17 @@ div {
   text-align: center;
 }
 
+#scoreBox {
+  text-align: center;
+}
+
+#retest, #score {
+  /* margin: auto; */
+  width: 270px;
+  height: 25px;
+  display:inline-block;
+}
+
 h1 {
   color: white;
   /* background: rgba(37, 37, 37, 0.75); */
