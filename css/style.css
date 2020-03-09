@@ -1,7 +1,8 @@
 html {
   /* extracted from https://css-tricks.com/perfect-full-page-background-image/ In order to achieve full screen background img, I will need to
-  look up each rule within this to better understand  */
-  background: url("nature.jpg") no-repeat center center fixed; 
+  look up each rule within this to better understand
+  Image it self was opensource webpage pixabay.com  */
+  background: url("../img/nature.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,13 +10,7 @@ html {
 }
 
 body {
-  /* background-image: url('nature.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%, 100%; */
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* background-image: url(img/nature.jpg);
-  background:  no-repeat center center fixed;  */
-
 }
 
 header {
@@ -48,7 +43,6 @@ div {
 }
 
 #retest, #score {
-  /* margin: auto; */
   width: 270px;
   height: 25px;
   display:inline-block;
@@ -56,24 +50,16 @@ div {
 
 h1 {
   color: white;
-  /* background: rgba(37, 37, 37, 0.75); */
   display: inline-block;
   text-align: center;
   width: 350px;
-  /* border: solid black 1px; */
   margin: 1px;
-/*   
-  width: auto;
-  text-align: center; */
-  
 }
 
 h2 {
   margin: auto;
   color: white;
-  /* background: rgba(37, 37, 37, 0.75); */
   width: 400px;
-  /* background-color: chartreuse; */
   text-align: center;
 }
 
@@ -85,4 +71,8 @@ h3 {
 p {
   text-indent: 50px;
 
+}
+
+ul, ol {
+  list-style-type: disc;
 }
